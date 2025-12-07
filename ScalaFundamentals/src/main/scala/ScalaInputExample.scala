@@ -1,12 +1,16 @@
+import java.util.Calendar
 import scala.io.StdIn
 
 @main
   def inputFunc(): Unit = {
-  println("Type Something")
+  println("Type your name ")
   val input = StdIn.readLine()
-  println(s"Received Input : $input" )
+  println(s"Hi  : $input . Wish you a great day ahead."  )
 
-  println("Type a Number ")
-  val number = StdIn.readInt()
-  println(s"Number + 2 = ${number + 2}")
+  println("Type your birthyear ")
+  val birthyear = StdIn.readInt()
+  val cal = Calendar.getInstance()
+
+  val currentYear =cal.get(Calendar.YEAR )
+  println(s"Wish you happy   ${currentYear - birthyear}")
 }
