@@ -9,6 +9,8 @@ def numberExample(): Unit = {
   val sampleFloatNo = 34444.3222f
   val largeNumber = 100_000_88
   println (s"Total amount to be paid for $numberOfItems items each priced at $price is ${numberOfItems*price}")
+  // Print currency using escape for $ -> $$
+  println (s"Total amount to be paid for $numberOfItems items each priced at $price is $$${numberOfItems*price}")
 
   // Types of Integers : Byte(8 bit), Short(16 bit), Int(32 bit, default assigned by compiler), Long(64 bit). Byte and Short not very frequently used
   // Types of Floats : Float (32 bit, 6-7 decimals), Double (64 bits, default one assigned by compiler )
