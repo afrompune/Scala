@@ -17,14 +17,15 @@ def strings(): Unit = {
   println(catName.toUpperCase())
   println(catName(4))
   println(catName.charAt(24))
-  println(catName.substring(3,13))
+  println(catName.substring(3, 13))
   println(catName.trim.length)
   val numberOfLegs = 4
-  println(s"$catName . Number of legs = $numberOfLegs. It has ${1+1} ears" )
+  println(s"$catName . Number of legs = $numberOfLegs. It has ${1 + 1} ears")
   println(raw"This is \\\ raw interpolator")
   //println(f"This is float interpolator ${5/2%.2f}")
-  val  multiLineStr = """This is a
+  val multiLineStr =
+    """This is a
       |multiline
       |string""".stripMargin
-    println(multiLineStr)
+  println(multiLineStr)
 }
