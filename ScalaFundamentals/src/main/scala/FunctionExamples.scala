@@ -25,7 +25,7 @@ def functionExamples(): Unit = {
 
 def functionWithAnotherFunc(): Unit = {
   def listVal(i:Int) = println(i)
-  //def listVal(s:String)= println(s"Str $s") // Scala does not support overloaded local functions 
+  //def listVal(s:String)= println(s"Str $s") // Scala does not support overloaded local functions
   val values = List (1,2,3,4)
   for(s <- values)
     listVal(s)
